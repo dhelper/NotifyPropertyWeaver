@@ -26,3 +26,4 @@
 *.exe binary
 *.png binary
 *.ico binary
+*.snk binary
