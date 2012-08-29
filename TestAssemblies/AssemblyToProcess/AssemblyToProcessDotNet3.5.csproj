@@ -78,6 +78,7 @@
       <SubType>
       </SubType>
     </Compile>
+    <Compile Include="ClassWithTernary.cs" />
     <Compile Include="ClassWithTryCatchInSet.cs" />
     <Compile Include="CodeGenAttribute\ClassWithGeneratedCodeAttribute.cs" />
     <Compile Include="CodeGenAttribute\ClassWithCompilerGeneratedAttribute.cs" />

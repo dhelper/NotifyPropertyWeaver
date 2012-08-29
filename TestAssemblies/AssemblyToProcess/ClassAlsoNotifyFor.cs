@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.ComponentModel;
 using NotifyPropertyWeaver;
 
 public class ClassAlsoNotifyFor : INotifyPropertyChanged

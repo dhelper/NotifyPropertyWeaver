@@ -53,6 +53,24 @@ public abstract class BaseTaskTests
     }
 
     [Test]
+    public void WithTernary()
+    {
+        var instance = assembly.GetInstance("ClassWithTernary");
+
+        var property1EventCalled = false;
+        ((INotifyPropertyChanged) instance).PropertyChanged += (sender, args) =>
+            {
+                if (args.PropertyName == "Property1")
+                {
+                    property1EventCalled = true;
+                }
+            };
+        instance.Property1 = 1;
+
+        Assert.IsTrue(property1EventCalled);
+    }
+
+    [Test]
     public void WithDependencyAfterSet()
     {
         var instance = assembly.GetInstance("ClassWithDependencyAfterSet");

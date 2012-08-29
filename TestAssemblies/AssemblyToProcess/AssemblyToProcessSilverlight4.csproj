@@ -69,6 +69,7 @@
     <Compile Include="ClassWithCustomEventInvoker.cs" />
     <Compile Include="ClassWithDependsOnAndDoNotNotify.cs" />
     <Compile Include="ClassWithDoNotNotify.cs" />
+    <Compile Include="ClassWithTernary.cs" />
     <Compile Include="GenericBaseWithPropertyOnChanged\ClassWithGenericProperty.cs" />
     <Compile Include="GenericBaseWithPropertyOnChanged\ClassWithGenericPropertyChild.cs" />
     <Compile Include="GenericChildWithPropertyOnChanged\ClassWithGenericProperty.cs" />
