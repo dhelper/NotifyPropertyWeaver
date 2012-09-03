@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel;
 using NotifyPropertyWeaver;
 
+
 [NotifyForAll]
 public class ClassAlreadyHasNotifcation : INotifyPropertyChanged
 {

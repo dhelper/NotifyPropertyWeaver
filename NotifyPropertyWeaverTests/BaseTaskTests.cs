@@ -58,14 +58,32 @@ public abstract class BaseTaskTests
         var instance = assembly.GetInstance("ClassWithTernary");
 
         var property1EventCalled = false;
-        ((INotifyPropertyChanged) instance).PropertyChanged += (sender, args) =>
+        ((INotifyPropertyChanged)instance).PropertyChanged += (sender, args) =>
+        {
+            if (args.PropertyName == "Property1")
             {
-                if (args.PropertyName == "Property1")
-                {
-                    property1EventCalled = true;
-                }
-            };
+                property1EventCalled = true;
+            }
+        };
         instance.Property1 = 1;
+
+        Assert.IsTrue(property1EventCalled);
+    }
+
+    [Test]
+    public void WithLdflda()
+    {
+        var instance = assembly.GetInstance("ClassWithLdflda");
+
+        var property1EventCalled = false;
+        ((INotifyPropertyChanged)instance).PropertyChanged += (sender, args) =>
+        {
+            if (args.PropertyName == "Property1")
+            {
+                property1EventCalled = true;
+            }
+        };
+        instance.Property1 = (Nullable<decimal>)0.0;
 
         Assert.IsTrue(property1EventCalled);
     }
