@@ -76,6 +76,7 @@
     <Compile Include="ClassWithCustomEventInvoker.cs" />
     <Compile Include="ClassWithBeforeAfterAndSimpleImplementation.cs" />
     <Compile Include="ClassWithLdflda.cs" />
+    <Compile Include="ClassWithLdfldaShortCircut.cs" />
     <Compile Include="ClassWithTernary.cs" />
     <Compile Include="GenericChildWithPropertyOnChanged\ClassWithGenericProperty.cs" />
     <Compile Include="GenericChildWithPropertyOnChanged\ClassWithGenericPropertyChild.cs" />

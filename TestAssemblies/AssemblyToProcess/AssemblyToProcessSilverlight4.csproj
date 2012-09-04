@@ -70,6 +70,7 @@
     <Compile Include="ClassWithDependsOnAndDoNotNotify.cs" />
     <Compile Include="ClassWithDoNotNotify.cs" />
     <Compile Include="ClassWithLdflda.cs" />
+    <Compile Include="ClassWithLdfldaShortCircut.cs" />
     <Compile Include="ClassWithTernary.cs" />
     <Compile Include="GenericBaseWithPropertyOnChanged\ClassWithGenericProperty.cs" />
     <Compile Include="GenericBaseWithPropertyOnChanged\ClassWithGenericPropertyChild.cs" />
