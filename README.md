@@ -85,6 +85,10 @@ Feel free to ping me on twitter http://twitter.com/SimonCropp
         }
     }
 
+## What is the difference between NotifyPropertyWeaver and Fody.PropertyChanged?
+
+[What Fody means to NotifyPropertyWeaver](http://simoncropp.com/fodyandnotifypropertyweaver)
+
 ## WIKI
 
 [See Wiki for more doco](https://github.com/SimonCropp/NotifyPropertyWeaver/wiki/)
