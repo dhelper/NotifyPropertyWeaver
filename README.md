@@ -92,3 +92,7 @@ Feel free to ping me on twitter http://twitter.com/SimonCropp
 ## WIKI
 
 [See Wiki for more doco](https://github.com/SimonCropp/NotifyPropertyWeaver/wiki/)
+
+## License
+
+Fody is licensed under MIT. Refer to license.txt for more information.
