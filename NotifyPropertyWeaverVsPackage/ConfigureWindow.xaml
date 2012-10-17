@@ -168,13 +168,8 @@
                         <FlowDocument>
                             <Paragraph>
                                 Home Page:
-                                <Wpf:HyperlinkEx NavigateUri="http://code.google.com/p/notifypropertyweaver">http://code.google.com/p/notifypropertyweaver</Wpf:HyperlinkEx>                            
-                                <LineBreak/>
-                                TaskOptions:
-                                <Wpf:HyperlinkEx  NavigateUri="http://code.google.com/p/notifypropertyweaver/wiki/WeavingTaskOptions">http://code.google.com/p/notifypropertyweaver/wiki/WeavingTaskOptions</Wpf:HyperlinkEx>
-                                <LineBreak/>
-                                Setup:
-                                <Wpf:HyperlinkEx  NavigateUri="http://code.google.com/p/notifypropertyweaver/wiki/Setup">http://code.google.com/p/notifypropertyweaver/wiki/Setup</Wpf:HyperlinkEx>
+                                <Wpf:HyperlinkEx NavigateUri="https://github.com/SimonCropp/NotifyPropertyWeaver/">https://github.com/SimonCropp/NotifyPropertyWeaver/</Wpf:HyperlinkEx>                            
+                                
                             </Paragraph>
                         </FlowDocument>
                     </RichTextBox>

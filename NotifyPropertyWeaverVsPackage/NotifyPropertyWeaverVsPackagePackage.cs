@@ -20,7 +20,7 @@ public sealed class NotifyPropertyWeaverVsPackagePackage : Package
     {
         base.Initialize();
 
-        var exceptionDialog = new ExceptionDialog("http://code.google.com/p/notifypropertyweaver/issues/list", "NotifyPropertyWeaver");
+        var exceptionDialog = new ExceptionDialog("https://github.com/SimonCropp/NotifyPropertyWeaver/issues", "NotifyPropertyWeaver");
         try
         {
             using (var catalog = new AssemblyCatalog(GetType().Assembly))

@@ -29,6 +29,6 @@ public partial class ExceptionWindow
 
     void LaunchIssues(object sender, RoutedEventArgs e)
     {
-        Process.Start("http://code.google.com/p/notifypropertyweaver/issues/list");
+        Process.Start("https://github.com/SimonCropp/NotifyPropertyWeaver/issues");
     }
 }

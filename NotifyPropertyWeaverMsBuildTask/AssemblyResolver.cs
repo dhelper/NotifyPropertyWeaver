@@ -135,7 +135,7 @@ public class AssemblyResolver : IAssemblyResolver
             catch (Exception exception)
             {
                 throw new WeavingException(string.Format(@"Tried to extract references from the BuildEngine. 
-Please raise a bug here http://code.google.com/p/notifypropertyweaver/issues/list with the below exception text.
+Please raise a bug with the below exception text.
 The temporary work-around is to change the weaving task as follows 
 <WeavingTask ... References=""@(ReferencePath)"" />
 Exception details: {0}", exception));
