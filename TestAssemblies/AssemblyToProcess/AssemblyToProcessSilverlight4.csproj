@@ -69,6 +69,8 @@
     <Compile Include="ClassWithCustomEventInvoker.cs" />
     <Compile Include="ClassWithDependsOnAndDoNotNotify.cs" />
     <Compile Include="ClassWithDoNotNotify.cs" />
+    <Compile Include="ClassWithGenericStructProp\ClassWithGenericStructProp.cs" />
+    <Compile Include="ClassWithGenericStructProp\ClassWithGenericStructPropImpl.cs" />
     <Compile Include="ClassWithLdflda.cs" />
     <Compile Include="ClassWithLdfldaShortCircut.cs" />
     <Compile Include="ClassWithTernary.cs" />

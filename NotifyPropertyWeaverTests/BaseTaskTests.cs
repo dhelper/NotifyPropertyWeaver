@@ -51,6 +51,23 @@ public abstract class BaseTaskTests
         var instance = assembly.GetInstance("ClassAlsoNotifyFor");
         EventTester.TestProperty(instance, true);
     }
+    [Test]
+    public void WithGenericStructProp()
+    {
+        var instance = assembly.GetInstance("ClassWithGenericStructPropImpl");
+
+        var property1EventCalled = false;
+        ((INotifyPropertyChanged)instance).PropertyChanged += (sender, args) =>
+        {
+            if (args.PropertyName == "Property1")
+            {
+                property1EventCalled = true;
+            }
+        };
+        instance.Property1 = 1;
+
+        Assert.IsTrue(property1EventCalled);
+    }
 
     [Test]
     public void WithTernary()

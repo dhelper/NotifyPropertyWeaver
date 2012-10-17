@@ -85,6 +85,8 @@
     <Compile Include="ClassWithBoolPropUsingStringProp.cs" />
     <Compile Include="ClassWithBranchingReturn1.cs" />
     <Compile Include="ClassWithBranchingReturn2.cs" />
+    <Compile Include="ClassWithGenericStructProp\ClassWithGenericStructPropImpl.cs" />
+    <Compile Include="ClassWithGenericStructProp\ClassWithGenericStructProp.cs" />
     <Compile Include="ClassWithBranchingReturnAndBeforeAfter.cs" />
     <Compile Include="ClassWithCustomPropertyChanged.cs" />
     <Compile Include="GenericBaseWithPropertyOnChanged\ClassWithGenericProperty.cs" />

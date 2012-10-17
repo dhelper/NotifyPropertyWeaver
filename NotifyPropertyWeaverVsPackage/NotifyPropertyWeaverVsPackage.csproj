@@ -253,7 +253,6 @@
   <UsingTask TaskName="FileUpdate" AssemblyFile="$(SolutionDir)Tools\SimpleMsBuildTasks.dll" />
   <UsingTask TaskName="EnvironmentVariable" AssemblyFile="$(SolutionDir)Tools\SimpleMsBuildTasks.dll" />
   <Target Name="BeforeBuild" DependsOnTargets="ConfigureVsSDKBuild">
-    <PepitaGet.WeavingTask />
     <GetAssemblyIdentity AssemblyFiles="$(SolutionDir)NotifyPropertyWeaverMsBuildTask\bin\$(ConfigurationName)\NotifyPropertyWeaverMsBuildTask.dll">
       <Output TaskParameter="Assemblies" ItemName="WeaverAssembly" />
     </GetAssemblyIdentity>
@@ -262,5 +261,5 @@
   <Target Name="ConfigureVsSDKBuild">
     <EnvironmentVariable Variable="VsSDKToolsPath" Value="$(VsSDKInstall)" />
   </Target>
-  <UsingTask TaskName="PepitaGet.WeavingTask" AssemblyFile="$(SolutionDir)Tools\PepitaGet.dll" />
+  <Import Project="$(ProjectPath)\..\..\Tools\Pepita\PepitaGet.targets" />
 </Project>
