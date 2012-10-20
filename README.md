@@ -95,4 +95,4 @@ Feel free to ping me on twitter http://twitter.com/SimonCropp
 
 ## License
 
-Fody is licensed under MIT. Refer to license.txt for more information.
+Licensed under MIT. Refer to license.txt for more information.
