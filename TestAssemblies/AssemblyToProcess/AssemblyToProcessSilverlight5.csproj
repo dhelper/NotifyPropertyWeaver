@@ -155,9 +155,9 @@
     <Compile Include="UsingPublicFieldThroughParameter\ClassWithPublicField.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\NotifyPropertyWeaver\NotifyPropertyWeaverSilverlight.csproj">
-      <Project>{ABE61442-D5DA-4447-9090-742EB501AC40}</Project>
-      <Name>NotifyPropertyWeaverSilverlight</Name>
+    <ProjectReference Include="..\..\NotifyPropertyWeaver\NotifyPropertyWeaver_PCL.csproj">
+      <Project>{3119133b-ec76-4357-a8a9-e2a8ee299f13}</Project>
+      <Name>NotifyPropertyWeaver_PCL</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />

@@ -1,58 +1,48 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
+    <BaseIntermediateOutputPath>obj\PCL</BaseIntermediateOutputPath>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{EF31280E-2606-4647-804E-D0C268D0B4EA}</ProjectGuid>
+    <ProjectGuid>{3119133B-EC76-4357-A8A9-E2A8EE299F13}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>NotifyPropertyWeaver</RootNamespace>
     <AssemblyName>NotifyPropertyWeaver</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile1</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\DebugDotNetStandard\</OutputPath>
+    <OutputPath>bin\Debug_PCL\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\DebugDotNetStandard\NotifyPropertyWeaver.xml</DocumentationFile>
-    <PlatformTarget>x86</PlatformTarget>
+    <DocumentationFile>bin\Debug_PCL\NotifyPropertyWeaver.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\ReleaseDotNetStandard\</OutputPath>
-    <DefineConstants>TRACE;Linq</DefineConstants>
+    <OutputPath>bin\Release_PCL\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\ReleaseDotNetStandard\NotifyPropertyWeaver.xml</DocumentationFile>
-  </PropertyGroup>
-  <PropertyGroup>
-    <SignAssembly>true</SignAssembly>
-  </PropertyGroup>
-  <PropertyGroup>
-    <AssemblyOriginatorKeyFile>..\key.snk</AssemblyOriginatorKeyFile>
+    <DocumentationFile>bin\Release_PCL\NotifyPropertyWeaver.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
+    <!-- A reference to the entire .NET Framework is automatically included -->
   </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <ItemGroup>
     <Compile Include="DependsOnAttribute.cs" />
     <Compile Include="DoNotNotifyAttribute.cs" />
-    <Compile Include="NotifyForAllAttribute.cs" />
-    <Compile Include="AssemblyInfo.cs" />
-    <Compile Include="NotifyPropertyAttribute.cs" />
     <Compile Include="..\CommonAssemblyInfo.cs" />
+    <Compile Include="NotifyForAllAttribute.cs" />
+    <Compile Include="NotifyPropertyAttribute.cs" />
   </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <PropertyGroup>
-    <PostBuildEvent>
-    </PostBuildEvent>
-  </PropertyGroup>
 </Project>

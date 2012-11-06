@@ -110,7 +110,6 @@
     <Compile Include="Net4WeavingTaskTests.cs" />
     <Compile Include="BaseTaskTests.cs" />
     <Compile Include="PerformanceTests.cs" />
-    <Compile Include="PhoneWeavingTaskTests.cs" />
     <Compile Include="PropertyErrorCheckers\AbstractErrorCheckerTest.cs" />
     <Compile Include="PropertyErrorCheckers\CheckForEqualityWithNoBackingFieldSetErrorCheckerTest.cs" />
     <Compile Include="PropertyFinderTests.cs" />
@@ -128,6 +127,16 @@
     <Compile Include="WeaverHelper.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\NotifyPropertyWeaver\NotifyPropertyWeaver_3.5.csproj">
+      <Project>{ef31280e-2606-4647-804e-d0c268d0b4ea}</Project>
+      <Name>NotifyPropertyWeaver_3.5</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\NotifyPropertyWeaver\NotifyPropertyWeaver_PCL.csproj">
+      <Project>{3119133b-ec76-4357-a8a9-e2a8ee299f13}</Project>
+      <Name>NotifyPropertyWeaver_PCL</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
     <ProjectReference Include="..\TestAssemblies\AssemblyWithBadNamedInvoker\AssemblyWithBadNamedInvoker.csproj">
       <Project>{A190DEA4-0618-4792-ACAA-B5B7CFD8C464}</Project>
       <Name>AssemblyWithBadNamedInvoker</Name>

@@ -146,9 +146,9 @@
     <Compile Include="UsingPublicFieldThroughParameter\ClassWithPublicField.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\NotifyPropertyWeaver\NotifyPropertyWeaverStandard.csproj">
+    <ProjectReference Include="..\..\NotifyPropertyWeaver\NotifyPropertyWeaver_3.5.csproj">
       <Project>{EF31280E-2606-4647-804E-D0C268D0B4EA}</Project>
-      <Name>NotifyPropertyWeaverStandard</Name>
+      <Name>NotifyPropertyWeaver_3.5</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />

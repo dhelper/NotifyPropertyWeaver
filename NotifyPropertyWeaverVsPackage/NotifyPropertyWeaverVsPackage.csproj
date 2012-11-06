@@ -182,17 +182,11 @@
     <None Include="Resources\Images_32bit.bmp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="$(SolutionDir)NotifyPropertyWeaver\NotifyPropertyWeaverPhone.csproj">
+    <ProjectReference Include="..\NotifyPropertyWeaver\NotifyPropertyWeaver_3.5.csproj">
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <Private>False</Private>
-    </ProjectReference>
-    <ProjectReference Include="$(SolutionDir)NotifyPropertyWeaver\NotifyPropertyWeaverSilverlight.csproj">
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <Private>False</Private>
-    </ProjectReference>
-    <ProjectReference Include="$(SolutionDir)NotifyPropertyWeaver\NotifyPropertyWeaverStandard.csproj">
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <Private>False</Private>
+      <Project>{EF31280E-2606-4647-804E-D0C268D0B4EA}</Project>
+      <Name>NotifyPropertyWeaver_3.5</Name>
     </ProjectReference>
     <Content Include="License.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -208,19 +202,15 @@
       <Link>Resources\NotifyPropertyWeaverMsBuildTask.dll</Link>
       <InProject>false</InProject>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(SolutionDir)NotifyPropertyWeaver\bin\$(ConfigurationName)DotNetStandard\NotifyPropertyWeaver.dll">
-      <Link>Resources\DotNetStandard\NotifyPropertyWeaver.dll</Link>
+    <EmbeddedResource Include="$(SolutionDir)NotifyPropertyWeaver\bin\$(ConfigurationName)_3.5\NotifyPropertyWeaver.dll">
+      <Link>Resources\DotNet_3.5\NotifyPropertyWeaver.dll</Link>
       <InProject>false</InProject>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(SolutionDir)NotifyPropertyWeaver\bin\$(ConfigurationName)Phone\NotifyPropertyWeaver.dll">
-      <Link>Resources\Phone\NotifyPropertyWeaver.dll</Link>
+    <EmbeddedResource Include="$(SolutionDir)NotifyPropertyWeaver\bin\$(ConfigurationName)_PCL\NotifyPropertyWeaver.dll">
+      <Link>Resources\PCL\NotifyPropertyWeaver.dll</Link>
       <InProject>false</InProject>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(SolutionDir)NotifyPropertyWeaver\bin\$(ConfigurationName)Silverlight\NotifyPropertyWeaver.dll">
-      <Link>Resources\Silverlight\NotifyPropertyWeaver.dll</Link>
-      <InProject>false</InProject>
-    </EmbeddedResource>
-    <EmbeddedResource Include="$(SolutionDir)NotifyPropertyWeaver\bin\$(ConfigurationName)Silverlight\NotifyPropertyWeaver.xml">
+    <EmbeddedResource Include="$(SolutionDir)NotifyPropertyWeaver\bin\$(ConfigurationName)_PCL\NotifyPropertyWeaver.xml">
       <Link>Resources\NotifyPropertyWeaver.xml</Link>
       <InProject>false</InProject>
     </EmbeddedResource>
