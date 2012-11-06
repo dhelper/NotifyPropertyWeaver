@@ -121,10 +121,26 @@ public class NotifyPropertyWeaverProjectInjector
 
         SelectReferences().Remove();
 
-        GetReferences().First().Parent.Add(
+        var referenceItemGroup = GetReferenceItemGroup();
+
+        referenceItemGroup.Add(
             new XElement(XDocumentExtensions.BuildNamespace + "Reference",
                          new XAttribute("Include", "NotifyPropertyWeaver"),
                          new XElement(XDocumentExtensions.BuildNamespace + "HintPath", Path.Combine(DependenciesDirectory, @"NotifyPropertyWeaver.dll"))));
+    }
+
+    XElement GetReferenceItemGroup()
+    {
+        var reference = GetReferences().FirstOrDefault();
+
+        if (reference != null)
+        {
+            return reference.Parent;
+        }
+
+        var itemGroup = new XElement(XDocumentExtensions.BuildNamespace + "ItemGroup");
+        xDocument.Root.Add(itemGroup);
+        return itemGroup;
     }
 
     IEnumerable<XElement> SelectReferences()
