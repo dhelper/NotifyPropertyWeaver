@@ -8,15 +8,22 @@ public static class FrameworkTypeReader
     public static string GetFrameworkType(string projectPath)
     {
         var xDocument = XDocument.Load(projectPath);
+
+        
         if (GetIsSilverlight(xDocument))
         {
-            if (string.Equals(GetTargetFrameworkProfile(xDocument), "WindowsPhone", StringComparison.OrdinalIgnoreCase))
-            {
-                return "Phone";
-            }
-            return "Silverlight";
+            return "PCL";
         }
-        return "DotNetStandard";
+        var targetFrameworkProfile = GetTargetFrameworkProfile(xDocument); 
+        
+        if (targetFrameworkProfile != null)
+        {
+            if (targetFrameworkProfile.StartsWith("Profile", StringComparison.OrdinalIgnoreCase))
+            {
+                return "PCL";
+            }
+        }
+        return "DotNet_35";
     }
 
 

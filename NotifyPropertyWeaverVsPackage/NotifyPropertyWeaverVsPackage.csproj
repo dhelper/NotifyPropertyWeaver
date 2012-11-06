@@ -203,7 +203,7 @@
       <InProject>false</InProject>
     </EmbeddedResource>
     <EmbeddedResource Include="$(SolutionDir)NotifyPropertyWeaver\bin\$(ConfigurationName)_3.5\NotifyPropertyWeaver.dll">
-      <Link>Resources\DotNet_3.5\NotifyPropertyWeaver.dll</Link>
+      <Link>Resources\DotNet_35\NotifyPropertyWeaver.dll</Link>
       <InProject>false</InProject>
     </EmbeddedResource>
     <EmbeddedResource Include="$(SolutionDir)NotifyPropertyWeaver\bin\$(ConfigurationName)_PCL\NotifyPropertyWeaver.dll">
