@@ -4,7 +4,9 @@ using NotifyPropertyWeaver;
 [NotifyForAll]
 public class ClassWithExplicitPropertyChanged : INotifyPropertyChanged
 {
+// ReSharper disable NotAccessedField.Local
     PropertyChangedEventHandler propertyChanged;
+// ReSharper restore NotAccessedField.Local
     event PropertyChangedEventHandler INotifyPropertyChanged.PropertyChanged
     {
         add

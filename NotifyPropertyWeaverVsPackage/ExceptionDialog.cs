@@ -4,14 +4,6 @@ using System.Windows.Interop;
 
 public class ExceptionDialog
 {
-    string issuesUrl;
-    string productName;
-
-    public ExceptionDialog(string issuesUrl, string productName)
-    {
-        this.issuesUrl = issuesUrl;
-        this.productName = productName;
-    }
 
     [DllImport("user32.dll")]
     static extern IntPtr GetActiveWindow();
